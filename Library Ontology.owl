@@ -1,0 +1,1231 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+    <!ENTITY Cryptography2 "http://www.LibrarySystem.com/ontologies/LMS.owl#Cryptography&amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;" >
+    <!ENTITY DataWarehousing2 "http://www.LibrarySystem.com/ontologies/LMS.owl#DataWarehousing&amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;" >
+    <!ENTITY Cryptography "http://www.LibrarySystem.com/ontologies/LMS.owl#Cryptography&amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;" >
+    <!ENTITY DataWarehousing "http://www.LibrarySystem.com/ontologies/LMS.owl#DataWarehousing&amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;" >
+    <!ENTITY Internet2 "http://www.LibrarySystem.com/ontologies/LMS.owl#Internet&amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;" >
+    <!ENTITY Internet "http://www.LibrarySystem.com/ontologies/LMS.owl#Internet&amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;" >
+]>
+
+
+<rdf:RDF xmlns="http://www.LibrarySystem.com/ontologies/LMS.owl#"
+     xml:base="http://www.LibrarySystem.com/ontologies/LMS.owl"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:Cryptography2="&Cryptography2;amp;"
+     xmlns:DataWarehousing="&DataWarehousing2;amp;amp;amp;amp;"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:DataWarehousing2="&DataWarehousing2;amp;"
+     xmlns:Internet2="&Internet2;amp;"
+     xmlns:Cryptography="&Cryptography2;amp;amp;amp;amp;"
+     xmlns:Internet="&Internet2;amp;amp;">
+    <owl:Ontology rdf:about="http://www.LibrarySystem.com/ontologies/LMS.owl">
+        <rdfs:comment>LibrarySystem Ontology
+
+This ontology describes the different classes and subclasses that exist in any Library System and the relationships between each of them</rdfs:comment>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Datatypes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.LibrarySystem.com/ontologies/LMS.owl#AssociateWith -->
+
+    <owl:ObjectProperty rdf:about="http://www.LibrarySystem.com/ontologies/LMS.owl#AssociateWith">
+        <rdf:type rdf:resource="&owl;SymmetricProperty"/>
+        <owl:inverseOf rdf:resource="http://www.LibrarySystem.com/ontologies/LMS.owl#AssociateWith"/>
+        <rdfs:range rdf:resource="http://www.LibrarySystem.com/ontologies/LMS.owl#Librarian"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.LibrarySystem.com/ontologies/LMS.owl#Borrow -->
+
+    <owl:ObjectProperty rdf:about="http://www.LibrarySystem.com/ontologies/LMS.owl#Borrow">
+        <rdfs:comment>This Property Specifies that Students Borrow Books from Library</rdfs:comment>
+        <rdfs:domain rdf:resource="http://www.LibrarySystem.com/ontologies/LMS.owl#PGStudent"/>
+        <rdfs:range rdf:resource="http://www.LibrarySystem.com/ontologies/LMS.owl#PGTextBook"/>
+        <rdfs:domain rdf:resource="http://www.LibrarySystem.com/ontologies/LMS.owl#UGStudent"/>
+        <rdfs:range rdf:resource="http://www.LibrarySystem.com/ontologies/LMS.owl#UGTextBook"/>
+        <owl:inverseOf rdf:resource="http://www.LibrarySystem.com/ontologies/LMS.owl#isBorrowedBy"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.LibrarySystem.com/ontologies/LMS.owl#Browse -->
+
+    <owl:ObjectProperty rdf:about="http://www.LibrarySystem.com/ontologies/LMS.owl#Browse">
+        <rdfs:domain rdf:resource="http://www.LibrarySystem.com/ontologies/LMS.owl#Faculty"/>
+        <rdfs:range rdf:resource="http://www.LibrarySystem.com/ontologies/LMS.owl#OnlineJournal"/>
+        <rdfs:domain rdf:resource="http://www.LibrarySystem.com/ontologies/LMS.owl#ResearchScholar"/>
+        <owl:inverseOf rdf:resource="http://www.LibrarySystem.com/ontologies/LMS.owl#isBrowsedBy"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.LibrarySystem.com/ontologies/LMS.owl#Issue -->
+
+    <owl:ObjectProperty rdf:about="http://www.LibrarySystem.com/ontologies/LMS.owl#Issue">
+        <rdfs:domain rdf:resource="http://www.LibrarySystem.com/ontologies/LMS.owl#Librarian"/>
+        <rdfs:range rdf:resource="http://www.LibrarySystem.com/ontologies/LMS.owl#TextBook"/>
+        <owl:inverseOf rdf:resource="http://www.LibrarySystem.com/ontologies/LMS.owl#isIssuedBy"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.LibrarySystem.com/ontologies/LMS.owl#Refer -->
+
+    <owl:ObjectProperty rdf:about="http://www.LibrarySystem.com/ontologies/LMS.owl#Refer">
+        <rdfs:domain rdf:resource="http://www.LibrarySystem.com/ontologies/LMS.owl#ResearchScholar"/>
+        <rdfs:range rdf:resource="http://www.LibrarySystem.com/ontologies/LMS.owl#Thesis"/>
+        <owl:inverseOf rdf:resource="http://www.LibrarySystem.com/ontologies/LMS.owl#isReferedBy"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.LibrarySystem.com/ontologies/LMS.owl#Return -->
+
+    <owl:ObjectProperty rdf:about="http://www.LibrarySystem.com/ontologies/LMS.owl#Return">
+        <rdfs:domain rdf:resource="http://www.LibrarySystem.com/ontologies/LMS.owl#PGStudent"/>
+        <rdfs:range rdf:resource="http://www.LibrarySystem.com/ontologies/LMS.owl#PGTextBook"/>
+        <rdfs:domain rdf:resource="http://www.LibrarySystem.com/ontologies/LMS.owl#UGStudent"/>
+        <rdfs:range rdf:resource="http://www.LibrarySystem.com/ontologies/LMS.owl#UGTextBook"/>
+        <owl:inverseOf rdf:resource="http://www.LibrarySystem.com/ontologies/LMS.owl#isReturnedBy"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.LibrarySystem.com/ontologies/LMS.owl#TempTransferBookTo -->
+
+    <owl:ObjectProperty rdf:about="http://www.LibrarySystem.com/ontologies/LMS.owl#TempTransferBookTo">
+        <rdf:type rdf:resource="&owl;TransitiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.LibrarySystem.com/ontologies/LMS.owl#AsstLibrarian"/>
+        <rdfs:range rdf:resource="http://www.LibrarySystem.com/ontologies/LMS.owl#AsstLibrarian"/>
+        <rdfs:domain rdf:resource="http://www.LibrarySystem.com/ontologies/LMS.owl#Faculty"/>
+        <rdfs:range rdf:resource="http://www.LibrarySystem.com/ontologies/LMS.owl#Student"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.LibrarySystem.com/ontologies/LMS.owl#Use -->
+
+    <owl:ObjectProperty rdf:about="http://www.LibrarySystem.com/ontologies/LMS.owl#Use">
+        <rdfs:range rdf:resource="http://www.LibrarySystem.com/ontologies/LMS.owl#InternetAndWiFiService"/>
+        <rdfs:domain rdf:resource="http://www.LibrarySystem.com/ontologies/LMS.owl#LibraryMember"/>
+        <owl:inverseOf rdf:resource="http://www.LibrarySystem.com/ontologies/LMS.owl#isUsedBy"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.LibrarySystem.com/ontologies/LMS.owl#Utilize -->
+
+    <owl:ObjectProperty rdf:about="http://www.LibrarySystem.com/ontologies/LMS.owl#Utilize">
+        <rdfs:domain rdf:resource="http://www.LibrarySystem.com/ontologies/LMS.owl#LibraryMember"/>
+        <rdfs:range rdf:resource="http://www.LibrarySystem.com/ontologies/LMS.owl#LibraryResource"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.LibrarySystem.com/ontologies/LMS.owl#hasName -->
+
+    <owl:ObjectProperty rdf:about="http://www.LibrarySystem.com/ontologies/LMS.owl#hasName">
+        <rdfs:range rdf:resource="http://www.LibrarySystem.com/ontologies/LMS.owl#Student"/>
+        <rdfs:domain rdf:resource="http://www.LibrarySystem.com/ontologies/LMS.owl#Student"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.LibrarySystem.com/ontologies/LMS.owl#hasTitle -->
+
+    <owl:ObjectProperty rdf:about="http://www.LibrarySystem.com/ontologies/LMS.owl#hasTitle">
+        <rdfs:domain rdf:resource="http://www.LibrarySystem.com/ontologies/LMS.owl#TextBook"/>
+        <rdfs:range rdf:resource="http://www.LibrarySystem.com/ontologies/LMS.owl#TextBook"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.LibrarySystem.com/ontologies/LMS.owl#isBorrowedBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.LibrarySystem.com/ontologies/LMS.owl#isBorrowedBy">
+        <rdfs:range rdf:resource="http://www.LibrarySystem.com/ontologies/LMS.owl#PGStudent"/>
+        <rdfs:domain rdf:resource="http://www.LibrarySystem.com/ontologies/LMS.owl#PGTextBook"/>
+        <rdfs:range rdf:resource="http://www.LibrarySystem.com/ontologies/LMS.owl#UGStudent"/>
+        <rdfs:domain rdf:resource="http://www.LibrarySystem.com/ontologies/LMS.owl#UGTextBook"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.LibrarySystem.com/ontologies/LMS.owl#isBrowsedBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.LibrarySystem.com/ontologies/LMS.owl#isBrowsedBy">
+        <rdfs:range rdf:resource="http://www.LibrarySystem.com/ontologies/LMS.owl#Faculty"/>
+        <rdfs:domain rdf:resource="http://www.LibrarySystem.com/ontologies/LMS.owl#OnlineJournal"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.LibrarySystem.com/ontologies/LMS.owl#isIssuedBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.LibrarySystem.com/ontologies/LMS.owl#isIssuedBy">
+        <rdfs:range rdf:resource="http://www.LibrarySystem.com/ontologies/LMS.owl#Librarian"/>
+        <rdfs:domain rdf:resource="http://www.LibrarySystem.com/ontologies/LMS.owl#TextBook"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.LibrarySystem.com/ontologies/LMS.owl#isReferedBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.LibrarySystem.com/ontologies/LMS.owl#isReferedBy">
+        <rdfs:range rdf:resource="http://www.LibrarySystem.com/ontologies/LMS.owl#ResearchScholar"/>
+        <rdfs:domain rdf:resource="http://www.LibrarySystem.com/ontologies/LMS.owl#Thesis"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.LibrarySystem.com/ontologies/LMS.owl#isReturnedBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.LibrarySystem.com/ontologies/LMS.owl#isReturnedBy">
+        <rdfs:range rdf:resource="http://www.LibrarySystem.com/ontologies/LMS.owl#PGStudent"/>
+        <rdfs:domain rdf:resource="http://www.LibrarySystem.com/ontologies/LMS.owl#PGTextBook"/>
+        <rdfs:range rdf:resource="http://www.LibrarySystem.com/ontologies/LMS.owl#UGStudent"/>
+        <rdfs:domain rdf:resource="http://www.LibrarySystem.com/ontologies/LMS.owl#UGTextBook"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.LibrarySystem.com/ontologies/LMS.owl#isUsedBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.LibrarySystem.com/ontologies/LMS.owl#isUsedBy">
+        <rdfs:domain rdf:resource="http://www.LibrarySystem.com/ontologies/LMS.owl#InternetAndWiFiService"/>
+        <rdfs:range rdf:resource="http://www.LibrarySystem.com/ontologies/LMS.owl#LibraryMember"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.LibrarySystem.com/ontologies/LMS.owl#isUtilizedBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.LibrarySystem.com/ontologies/LMS.owl#isUtilizedBy">
+        <rdfs:range rdf:resource="http://www.LibrarySystem.com/ontologies/LMS.owl#LibraryMember"/>
+        <rdfs:domain rdf:resource="http://www.LibrarySystem.com/ontologies/LMS.owl#LibraryResource"/>
+        <owl:inverseOf rdf:resource="http://www.LibrarySystem.com/ontologies/LMS.owl#Utilize"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.LibrarySystem.com/ontologies/LMS.owl#hasLibCards -->
+
+    <owl:DatatypeProperty rdf:about="http://www.LibrarySystem.com/ontologies/LMS.owl#hasLibCards"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.LibrarySystem.com/ontologies/LMS.owl#AdminStaff -->
+
+    <owl:Class rdf:about="http://www.LibrarySystem.com/ontologies/LMS.owl#AdminStaff">
+        <rdfs:subClassOf rdf:resource="http://www.LibrarySystem.com/ontologies/LMS.owl#LibraryMember"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.LibrarySystem.com/ontologies/LMS.owl#AsstLibrarian -->
+
+    <owl:Class rdf:about="http://www.LibrarySystem.com/ontologies/LMS.owl#AsstLibrarian">
+        <rdfs:subClassOf rdf:resource="http://www.LibrarySystem.com/ontologies/LMS.owl#LibraryPersonnel"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.LibrarySystem.com/ontologies/LMS.owl#Book -->
+
+    <owl:Class rdf:about="http://www.LibrarySystem.com/ontologies/LMS.owl#Book">
+        <rdfs:subClassOf rdf:resource="http://www.LibrarySystem.com/ontologies/LMS.owl#LibraryResource"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.LibrarySystem.com/ontologies/LMS.owl#CD -->
+
+    <owl:Class rdf:about="http://www.LibrarySystem.com/ontologies/LMS.owl#CD">
+        <rdfs:subClassOf rdf:resource="http://www.LibrarySystem.com/ontologies/LMS.owl#LibraryResource"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.LibrarySystem.com/ontologies/LMS.owl#CurrentAwarenessService -->
+
+    <owl:Class rdf:about="http://www.LibrarySystem.com/ontologies/LMS.owl#CurrentAwarenessService">
+        <rdfs:subClassOf rdf:resource="http://www.LibrarySystem.com/ontologies/LMS.owl#LibraryService"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.LibrarySystem.com/ontologies/LMS.owl#Faculty -->
+
+    <owl:Class rdf:about="http://www.LibrarySystem.com/ontologies/LMS.owl#Faculty">
+        <rdfs:subClassOf rdf:resource="http://www.LibrarySystem.com/ontologies/LMS.owl#LibraryMember"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.LibrarySystem.com/ontologies/LMS.owl#Browse"/>
+                <owl:someValuesFrom rdf:resource="http://www.LibrarySystem.com/ontologies/LMS.owl#OnlineJournal"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.LibrarySystem.com/ontologies/LMS.owl#GeneralBook -->
+
+    <owl:Class rdf:about="http://www.LibrarySystem.com/ontologies/LMS.owl#GeneralBook">
+        <rdfs:subClassOf rdf:resource="http://www.LibrarySystem.com/ontologies/LMS.owl#Book"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.LibrarySystem.com/ontologies/LMS.owl#GuestUser -->
+
+    <owl:Class rdf:about="http://www.LibrarySystem.com/ontologies/LMS.owl#GuestUser">
+        <rdfs:subClassOf rdf:resource="http://www.LibrarySystem.com/ontologies/LMS.owl#LibraryMember"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.LibrarySystem.com/ontologies/LMS.owl#InternetAndWiFiService -->
+
+    <owl:Class rdf:about="http://www.LibrarySystem.com/ontologies/LMS.owl#InternetAndWiFiService">
+        <rdfs:subClassOf rdf:resource="http://www.LibrarySystem.com/ontologies/LMS.owl#LibraryService"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.LibrarySystem.com/ontologies/LMS.owl#Journal -->
+
+    <owl:Class rdf:about="http://www.LibrarySystem.com/ontologies/LMS.owl#Journal">
+        <rdfs:subClassOf rdf:resource="http://www.LibrarySystem.com/ontologies/LMS.owl#LibraryResource"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.LibrarySystem.com/ontologies/LMS.owl#JrAssistant -->
+
+    <owl:Class rdf:about="http://www.LibrarySystem.com/ontologies/LMS.owl#JrAssistant">
+        <rdfs:subClassOf rdf:resource="http://www.LibrarySystem.com/ontologies/LMS.owl#LibraryPersonnel"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.LibrarySystem.com/ontologies/LMS.owl#LendingService -->
+
+    <owl:Class rdf:about="http://www.LibrarySystem.com/ontologies/LMS.owl#LendingService">
+        <rdfs:subClassOf rdf:resource="http://www.LibrarySystem.com/ontologies/LMS.owl#LibraryService"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.LibrarySystem.com/ontologies/LMS.owl#Librarian -->
+
+    <owl:Class rdf:about="http://www.LibrarySystem.com/ontologies/LMS.owl#Librarian">
+        <rdfs:subClassOf rdf:resource="http://www.LibrarySystem.com/ontologies/LMS.owl#LibraryPersonnel"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.LibrarySystem.com/ontologies/LMS.owl#Issue"/>
+                <owl:someValuesFrom rdf:resource="http://www.LibrarySystem.com/ontologies/LMS.owl#TextBook"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.LibrarySystem.com/ontologies/LMS.owl#LibraryMember -->
+
+    <owl:Class rdf:about="http://www.LibrarySystem.com/ontologies/LMS.owl#LibraryMember">
+        <rdfs:subClassOf rdf:resource="&owl;Thing"/>
+        <rdfs:comment>This Class includes all the people who have membership in the library and are 
+called Library Members</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.LibrarySystem.com/ontologies/LMS.owl#LibraryPersonnel -->
+
+    <owl:Class rdf:about="http://www.LibrarySystem.com/ontologies/LMS.owl#LibraryPersonnel">
+        <rdfs:subClassOf rdf:resource="&owl;Thing"/>
+        <rdfs:comment>This Class Includes all the persons who work in the Library with different 
+Positions and different set of works</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.LibrarySystem.com/ontologies/LMS.owl#LibraryResource -->
+
+    <owl:Class rdf:about="http://www.LibrarySystem.com/ontologies/LMS.owl#LibraryResource">
+        <rdfs:subClassOf rdf:resource="&owl;Thing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.LibrarySystem.com/ontologies/LMS.owl#LibraryService -->
+
+    <owl:Class rdf:about="http://www.LibrarySystem.com/ontologies/LMS.owl#LibraryService">
+        <rdfs:subClassOf rdf:resource="&owl;Thing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.LibrarySystem.com/ontologies/LMS.owl#NewsPaper -->
+
+    <owl:Class rdf:about="http://www.LibrarySystem.com/ontologies/LMS.owl#NewsPaper">
+        <rdfs:subClassOf rdf:resource="http://www.LibrarySystem.com/ontologies/LMS.owl#LibraryResource"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.LibrarySystem.com/ontologies/LMS.owl#NewsPaperService -->
+
+    <owl:Class rdf:about="http://www.LibrarySystem.com/ontologies/LMS.owl#NewsPaperService">
+        <rdfs:subClassOf rdf:resource="http://www.LibrarySystem.com/ontologies/LMS.owl#LibraryService"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.LibrarySystem.com/ontologies/LMS.owl#OnlineJournal -->
+
+    <owl:Class rdf:about="http://www.LibrarySystem.com/ontologies/LMS.owl#OnlineJournal">
+        <rdfs:subClassOf rdf:resource="http://www.LibrarySystem.com/ontologies/LMS.owl#LibraryResource"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.LibrarySystem.com/ontologies/LMS.owl#PGStudent -->
+
+    <owl:Class rdf:about="http://www.LibrarySystem.com/ontologies/LMS.owl#PGStudent">
+        <rdfs:subClassOf rdf:resource="http://www.LibrarySystem.com/ontologies/LMS.owl#Student"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.LibrarySystem.com/ontologies/LMS.owl#hasName"/>
+                <owl:hasValue rdf:resource="http://www.LibrarySystem.com/ontologies/LMS.owl#George"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.LibrarySystem.com/ontologies/LMS.owl#Borrow"/>
+                <owl:allValuesFrom rdf:resource="http://www.LibrarySystem.com/ontologies/LMS.owl#PGTextBook"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.LibrarySystem.com/ontologies/LMS.owl#hasName"/>
+                <owl:hasValue rdf:resource="http://www.LibrarySystem.com/ontologies/LMS.owl#Mahendra"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.LibrarySystem.com/ontologies/LMS.owl#hasLibCards"/>
+                <owl:hasValue rdf:datatype="&xsd;integer">5</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.LibrarySystem.com/ontologies/LMS.owl#hasName"/>
+                <owl:hasValue rdf:resource="http://www.LibrarySystem.com/ontologies/LMS.owl#William"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.LibrarySystem.com/ontologies/LMS.owl#Borrow"/>
+                <owl:onClass rdf:resource="http://www.LibrarySystem.com/ontologies/LMS.owl#PGTextBook"/>
+                <owl:maxQualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">5</owl:maxQualifiedCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.LibrarySystem.com/ontologies/LMS.owl#hasName"/>
+                <owl:hasValue rdf:resource="http://www.LibrarySystem.com/ontologies/LMS.owl#Stephen"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.LibrarySystem.com/ontologies/LMS.owl#hasName"/>
+                <owl:hasValue rdf:resource="http://www.LibrarySystem.com/ontologies/LMS.owl#Pavani"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <owl:disjointWith rdf:resource="http://www.LibrarySystem.com/ontologies/LMS.owl#UGStudent"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.LibrarySystem.com/ontologies/LMS.owl#PGTextBook -->
+
+    <owl:Class rdf:about="http://www.LibrarySystem.com/ontologies/LMS.owl#PGTextBook">
+        <rdfs:subClassOf rdf:resource="http://www.LibrarySystem.com/ontologies/LMS.owl#TextBook"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.LibrarySystem.com/ontologies/LMS.owl#hasTitle"/>
+                <owl:hasValue rdf:resource="http://www.LibrarySystem.com/ontologies/LMS.owl#DataWarehousingAndDataMining"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.LibrarySystem.com/ontologies/LMS.owl#hasTitle"/>
+                <owl:hasValue rdf:resource="http://www.LibrarySystem.com/ontologies/LMS.owl#CryptographyAndNetworkSecurity"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <owl:disjointWith rdf:resource="http://www.LibrarySystem.com/ontologies/LMS.owl#UGTextBook"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.LibrarySystem.com/ontologies/LMS.owl#ReferenceBook -->
+
+    <owl:Class rdf:about="http://www.LibrarySystem.com/ontologies/LMS.owl#ReferenceBook">
+        <rdfs:subClassOf rdf:resource="http://www.LibrarySystem.com/ontologies/LMS.owl#Book"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.LibrarySystem.com/ontologies/LMS.owl#ReferenceService -->
+
+    <owl:Class rdf:about="http://www.LibrarySystem.com/ontologies/LMS.owl#ReferenceService">
+        <rdfs:subClassOf rdf:resource="http://www.LibrarySystem.com/ontologies/LMS.owl#LibraryService"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.LibrarySystem.com/ontologies/LMS.owl#ReprographicService -->
+
+    <owl:Class rdf:about="http://www.LibrarySystem.com/ontologies/LMS.owl#ReprographicService">
+        <rdfs:subClassOf rdf:resource="http://www.LibrarySystem.com/ontologies/LMS.owl#LibraryService"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.LibrarySystem.com/ontologies/LMS.owl#ResearchScholar -->
+
+    <owl:Class rdf:about="http://www.LibrarySystem.com/ontologies/LMS.owl#ResearchScholar">
+        <rdfs:subClassOf rdf:resource="http://www.LibrarySystem.com/ontologies/LMS.owl#LibraryMember"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.LibrarySystem.com/ontologies/LMS.owl#Browse"/>
+                <owl:someValuesFrom rdf:resource="http://www.LibrarySystem.com/ontologies/LMS.owl#OnlineJournal"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.LibrarySystem.com/ontologies/LMS.owl#Refer"/>
+                <owl:someValuesFrom rdf:resource="http://www.LibrarySystem.com/ontologies/LMS.owl#Thesis"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.LibrarySystem.com/ontologies/LMS.owl#Student -->
+
+    <owl:Class rdf:about="http://www.LibrarySystem.com/ontologies/LMS.owl#Student">
+        <rdfs:subClassOf rdf:resource="http://www.LibrarySystem.com/ontologies/LMS.owl#LibraryMember"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.LibrarySystem.com/ontologies/LMS.owl#Technician -->
+
+    <owl:Class rdf:about="http://www.LibrarySystem.com/ontologies/LMS.owl#Technician">
+        <rdfs:subClassOf rdf:resource="http://www.LibrarySystem.com/ontologies/LMS.owl#LibraryPersonnel"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.LibrarySystem.com/ontologies/LMS.owl#TextBook -->
+
+    <owl:Class rdf:about="http://www.LibrarySystem.com/ontologies/LMS.owl#TextBook">
+        <rdfs:subClassOf rdf:resource="http://www.LibrarySystem.com/ontologies/LMS.owl#Book"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.LibrarySystem.com/ontologies/LMS.owl#Thesis -->
+
+    <owl:Class rdf:about="http://www.LibrarySystem.com/ontologies/LMS.owl#Thesis">
+        <rdfs:subClassOf rdf:resource="http://www.LibrarySystem.com/ontologies/LMS.owl#LibraryResource"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.LibrarySystem.com/ontologies/LMS.owl#UGStudent -->
+
+    <owl:Class rdf:about="http://www.LibrarySystem.com/ontologies/LMS.owl#UGStudent">
+        <rdfs:subClassOf rdf:resource="http://www.LibrarySystem.com/ontologies/LMS.owl#Student"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.LibrarySystem.com/ontologies/LMS.owl#hasLibCards"/>
+                <owl:hasValue rdf:datatype="&xsd;integer">3</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.LibrarySystem.com/ontologies/LMS.owl#hasName"/>
+                <owl:hasValue rdf:resource="http://www.LibrarySystem.com/ontologies/LMS.owl#Peter"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.LibrarySystem.com/ontologies/LMS.owl#hasName"/>
+                <owl:hasValue rdf:resource="http://www.LibrarySystem.com/ontologies/LMS.owl#Bob"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.LibrarySystem.com/ontologies/LMS.owl#hasName"/>
+                <owl:hasValue rdf:resource="http://www.LibrarySystem.com/ontologies/LMS.owl#Kishore"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.LibrarySystem.com/ontologies/LMS.owl#hasName"/>
+                <owl:hasValue rdf:resource="http://www.LibrarySystem.com/ontologies/LMS.owl#Samuel"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.LibrarySystem.com/ontologies/LMS.owl#hasName"/>
+                <owl:hasValue rdf:resource="http://www.LibrarySystem.com/ontologies/LMS.owl#Rajini"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.LibrarySystem.com/ontologies/LMS.owl#Borrow"/>
+                <owl:allValuesFrom rdf:resource="http://www.LibrarySystem.com/ontologies/LMS.owl#UGTextBook"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.LibrarySystem.com/ontologies/LMS.owl#Borrow"/>
+                <owl:onClass rdf:resource="http://www.LibrarySystem.com/ontologies/LMS.owl#UGTextBook"/>
+                <owl:maxQualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">3</owl:maxQualifiedCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.LibrarySystem.com/ontologies/LMS.owl#UGTextBook -->
+
+    <owl:Class rdf:about="http://www.LibrarySystem.com/ontologies/LMS.owl#UGTextBook">
+        <rdfs:subClassOf rdf:resource="http://www.LibrarySystem.com/ontologies/LMS.owl#TextBook"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.LibrarySystem.com/ontologies/LMS.owl#hasTitle"/>
+                <owl:hasValue rdf:resource="http://www.LibrarySystem.com/ontologies/LMS.owl#VisualBasics"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.LibrarySystem.com/ontologies/LMS.owl#hasTitle"/>
+                <owl:hasValue rdf:resource="http://www.LibrarySystem.com/ontologies/LMS.owl#DatabaseManagementSystem"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.LibrarySystem.com/ontologies/LMS.owl#ACM -->
+
+    <owl:NamedIndividual rdf:about="http://www.LibrarySystem.com/ontologies/LMS.owl#ACM">
+        <rdf:type rdf:resource="http://www.LibrarySystem.com/ontologies/LMS.owl#OnlineJournal"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.LibrarySystem.com/ontologies/LMS.owl#ACMSIGKDD -->
+
+    <owl:NamedIndividual rdf:about="http://www.LibrarySystem.com/ontologies/LMS.owl#ACMSIGKDD">
+        <rdf:type rdf:resource="http://www.LibrarySystem.com/ontologies/LMS.owl#Journal"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.LibrarySystem.com/ontologies/LMS.owl#ACMSIGMIS -->
+
+    <owl:NamedIndividual rdf:about="http://www.LibrarySystem.com/ontologies/LMS.owl#ACMSIGMIS">
+        <rdf:type rdf:resource="http://www.LibrarySystem.com/ontologies/LMS.owl#Journal"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.LibrarySystem.com/ontologies/LMS.owl#AMaheshwari -->
+
+    <owl:NamedIndividual rdf:about="http://www.LibrarySystem.com/ontologies/LMS.owl#AMaheshwari">
+        <rdf:type rdf:resource="http://www.LibrarySystem.com/ontologies/LMS.owl#AdminStaff"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.LibrarySystem.com/ontologies/LMS.owl#APhanindra -->
+
+    <owl:NamedIndividual rdf:about="http://www.LibrarySystem.com/ontologies/LMS.owl#APhanindra">
+        <rdf:type rdf:resource="http://www.LibrarySystem.com/ontologies/LMS.owl#Faculty"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.LibrarySystem.com/ontologies/LMS.owl#ASoujanya -->
+
+    <owl:NamedIndividual rdf:about="http://www.LibrarySystem.com/ontologies/LMS.owl#ASoujanya">
+        <rdf:type rdf:resource="http://www.LibrarySystem.com/ontologies/LMS.owl#Faculty"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.LibrarySystem.com/ontologies/LMS.owl#Anuradha -->
+
+    <owl:NamedIndividual rdf:about="http://www.LibrarySystem.com/ontologies/LMS.owl#Anuradha">
+        <rdf:type rdf:resource="http://www.LibrarySystem.com/ontologies/LMS.owl#AsstLibrarian"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.LibrarySystem.com/ontologies/LMS.owl#AyeshaAmeen -->
+
+    <owl:NamedIndividual rdf:about="http://www.LibrarySystem.com/ontologies/LMS.owl#AyeshaAmeen">
+        <rdf:type rdf:resource="http://www.LibrarySystem.com/ontologies/LMS.owl#ResearchScholar"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.LibrarySystem.com/ontologies/LMS.owl#AyeshaBanu -->
+
+    <owl:NamedIndividual rdf:about="http://www.LibrarySystem.com/ontologies/LMS.owl#AyeshaBanu">
+        <rdf:type rdf:resource="http://www.LibrarySystem.com/ontologies/LMS.owl#ResearchScholar"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.LibrarySystem.com/ontologies/LMS.owl#BRajKumar -->
+
+    <owl:NamedIndividual rdf:about="http://www.LibrarySystem.com/ontologies/LMS.owl#BRajKumar">
+        <rdf:type rdf:resource="http://www.LibrarySystem.com/ontologies/LMS.owl#ResearchScholar"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.LibrarySystem.com/ontologies/LMS.owl#Bob -->
+
+    <owl:NamedIndividual rdf:about="http://www.LibrarySystem.com/ontologies/LMS.owl#Bob">
+        <rdf:type rdf:resource="http://www.LibrarySystem.com/ontologies/LMS.owl#UGStudent"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.LibrarySystem.com/ontologies/LMS.owl#BuildingWebServiceOntology -->
+
+    <owl:NamedIndividual rdf:about="http://www.LibrarySystem.com/ontologies/LMS.owl#BuildingWebServiceOntology">
+        <rdf:type rdf:resource="http://www.LibrarySystem.com/ontologies/LMS.owl#Thesis"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.LibrarySystem.com/ontologies/LMS.owl#Chip -->
+
+    <owl:NamedIndividual rdf:about="http://www.LibrarySystem.com/ontologies/LMS.owl#Chip">
+        <rdf:type rdf:resource="http://www.LibrarySystem.com/ontologies/LMS.owl#CD"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.LibrarySystem.com/ontologies/LMS.owl#CryptographyAndNetworkSecurity -->
+
+    <owl:NamedIndividual rdf:about="http://www.LibrarySystem.com/ontologies/LMS.owl#CryptographyAndNetworkSecurity">
+        <rdf:type rdf:resource="http://www.LibrarySystem.com/ontologies/LMS.owl#PGTextBook"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.LibrarySystem.com/ontologies/LMS.owl#DataWarehousingAndDataMining -->
+
+    <owl:NamedIndividual rdf:about="http://www.LibrarySystem.com/ontologies/LMS.owl#DataWarehousingAndDataMining">
+        <rdf:type rdf:resource="http://www.LibrarySystem.com/ontologies/LMS.owl#PGTextBook"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.LibrarySystem.com/ontologies/LMS.owl#DatabaseManagementSystem -->
+
+    <owl:NamedIndividual rdf:about="http://www.LibrarySystem.com/ontologies/LMS.owl#DatabaseManagementSystem">
+        <rdf:type rdf:resource="http://www.LibrarySystem.com/ontologies/LMS.owl#UGTextBook"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.LibrarySystem.com/ontologies/LMS.owl#DeccanChronicle -->
+
+    <owl:NamedIndividual rdf:about="http://www.LibrarySystem.com/ontologies/LMS.owl#DeccanChronicle">
+        <rdf:type rdf:resource="http://www.LibrarySystem.com/ontologies/LMS.owl#NewsPaper"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.LibrarySystem.com/ontologies/LMS.owl#Delnet -->
+
+    <owl:NamedIndividual rdf:about="http://www.LibrarySystem.com/ontologies/LMS.owl#Delnet">
+        <rdf:type rdf:resource="http://www.LibrarySystem.com/ontologies/LMS.owl#OnlineJournal"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.LibrarySystem.com/ontologies/LMS.owl#DeveloperIQ -->
+
+    <owl:NamedIndividual rdf:about="http://www.LibrarySystem.com/ontologies/LMS.owl#DeveloperIQ">
+        <rdf:type rdf:resource="http://www.LibrarySystem.com/ontologies/LMS.owl#CD"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.LibrarySystem.com/ontologies/LMS.owl#Digit -->
+
+    <owl:NamedIndividual rdf:about="http://www.LibrarySystem.com/ontologies/LMS.owl#Digit">
+        <rdf:type rdf:resource="http://www.LibrarySystem.com/ontologies/LMS.owl#CD"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.LibrarySystem.com/ontologies/LMS.owl#DrKhaleel -->
+
+    <owl:NamedIndividual rdf:about="http://www.LibrarySystem.com/ontologies/LMS.owl#DrKhaleel">
+        <rdf:type rdf:resource="http://www.LibrarySystem.com/ontologies/LMS.owl#Faculty"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.LibrarySystem.com/ontologies/LMS.owl#DrSameenFatima -->
+
+    <owl:NamedIndividual rdf:about="http://www.LibrarySystem.com/ontologies/LMS.owl#DrSameenFatima">
+        <rdf:type rdf:resource="http://www.LibrarySystem.com/ontologies/LMS.owl#Faculty"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.LibrarySystem.com/ontologies/LMS.owl#Eenadu -->
+
+    <owl:NamedIndividual rdf:about="http://www.LibrarySystem.com/ontologies/LMS.owl#Eenadu">
+        <rdf:type rdf:resource="http://www.LibrarySystem.com/ontologies/LMS.owl#NewsPaper"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.LibrarySystem.com/ontologies/LMS.owl#ElectronicsForU -->
+
+    <owl:NamedIndividual rdf:about="http://www.LibrarySystem.com/ontologies/LMS.owl#ElectronicsForU">
+        <rdf:type rdf:resource="http://www.LibrarySystem.com/ontologies/LMS.owl#CD"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.LibrarySystem.com/ontologies/LMS.owl#EmbeddedSystemDesign -->
+
+    <owl:NamedIndividual rdf:about="http://www.LibrarySystem.com/ontologies/LMS.owl#EmbeddedSystemDesign">
+        <rdf:type rdf:resource="http://www.LibrarySystem.com/ontologies/LMS.owl#Journal"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.LibrarySystem.com/ontologies/LMS.owl#George -->
+
+    <owl:NamedIndividual rdf:about="http://www.LibrarySystem.com/ontologies/LMS.owl#George">
+        <rdf:type rdf:resource="http://www.LibrarySystem.com/ontologies/LMS.owl#PGStudent"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.LibrarySystem.com/ontologies/LMS.owl#IEEE -->
+
+    <owl:NamedIndividual rdf:about="http://www.LibrarySystem.com/ontologies/LMS.owl#IEEE">
+        <rdf:type rdf:resource="http://www.LibrarySystem.com/ontologies/LMS.owl#OnlineJournal"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.LibrarySystem.com/ontologies/LMS.owl#IUPJournalOfMarketing -->
+
+    <owl:NamedIndividual rdf:about="http://www.LibrarySystem.com/ontologies/LMS.owl#IUPJournalOfMarketing">
+        <rdf:type rdf:resource="http://www.LibrarySystem.com/ontologies/LMS.owl#Journal"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.LibrarySystem.com/ontologies/LMS.owl#IndianJournalOfLabourEconomics -->
+
+    <owl:NamedIndividual rdf:about="http://www.LibrarySystem.com/ontologies/LMS.owl#IndianJournalOfLabourEconomics">
+        <rdf:type rdf:resource="http://www.LibrarySystem.com/ontologies/LMS.owl#Journal"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.LibrarySystem.com/ontologies/LMS.owl#KSathish -->
+
+    <owl:NamedIndividual rdf:about="http://www.LibrarySystem.com/ontologies/LMS.owl#KSathish">
+        <rdf:type rdf:resource="http://www.LibrarySystem.com/ontologies/LMS.owl#AdminStaff"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.LibrarySystem.com/ontologies/LMS.owl#Kishore -->
+
+    <owl:NamedIndividual rdf:about="http://www.LibrarySystem.com/ontologies/LMS.owl#Kishore">
+        <rdf:type rdf:resource="http://www.LibrarySystem.com/ontologies/LMS.owl#UGStudent"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.LibrarySystem.com/ontologies/LMS.owl#LearnProfessionalism -->
+
+    <owl:NamedIndividual rdf:about="http://www.LibrarySystem.com/ontologies/LMS.owl#LearnProfessionalism">
+        <rdf:type rdf:resource="http://www.LibrarySystem.com/ontologies/LMS.owl#GeneralBook"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.LibrarySystem.com/ontologies/LMS.owl#MMadhu -->
+
+    <owl:NamedIndividual rdf:about="http://www.LibrarySystem.com/ontologies/LMS.owl#MMadhu">
+        <rdf:type rdf:resource="http://www.LibrarySystem.com/ontologies/LMS.owl#AdminStaff"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.LibrarySystem.com/ontologies/LMS.owl#MMalathi -->
+
+    <owl:NamedIndividual rdf:about="http://www.LibrarySystem.com/ontologies/LMS.owl#MMalathi">
+        <rdf:type rdf:resource="http://www.LibrarySystem.com/ontologies/LMS.owl#Librarian"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.LibrarySystem.com/ontologies/LMS.owl#Mahendra -->
+
+    <owl:NamedIndividual rdf:about="http://www.LibrarySystem.com/ontologies/LMS.owl#Mahendra">
+        <rdf:type rdf:resource="http://www.LibrarySystem.com/ontologies/LMS.owl#PGStudent"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.LibrarySystem.com/ontologies/LMS.owl#MarketYourSkills -->
+
+    <owl:NamedIndividual rdf:about="http://www.LibrarySystem.com/ontologies/LMS.owl#MarketYourSkills">
+        <rdf:type rdf:resource="http://www.LibrarySystem.com/ontologies/LMS.owl#GeneralBook"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.LibrarySystem.com/ontologies/LMS.owl#PCQuest -->
+
+    <owl:NamedIndividual rdf:about="http://www.LibrarySystem.com/ontologies/LMS.owl#PCQuest">
+        <rdf:type rdf:resource="http://www.LibrarySystem.com/ontologies/LMS.owl#CD"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.LibrarySystem.com/ontologies/LMS.owl#Pavani -->
+
+    <owl:NamedIndividual rdf:about="http://www.LibrarySystem.com/ontologies/LMS.owl#Pavani">
+        <rdf:type rdf:resource="http://www.LibrarySystem.com/ontologies/LMS.owl#PGStudent"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.LibrarySystem.com/ontologies/LMS.owl#Peter -->
+
+    <owl:NamedIndividual rdf:about="http://www.LibrarySystem.com/ontologies/LMS.owl#Peter">
+        <rdf:type rdf:resource="http://www.LibrarySystem.com/ontologies/LMS.owl#UGStudent"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.LibrarySystem.com/ontologies/LMS.owl#Prof.ShivaramaKrishna -->
+
+    <owl:NamedIndividual rdf:about="http://www.LibrarySystem.com/ontologies/LMS.owl#Prof.ShivaramaKrishna">
+        <rdf:type rdf:resource="http://www.LibrarySystem.com/ontologies/LMS.owl#GuestUser"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.LibrarySystem.com/ontologies/LMS.owl#Prof.VenkatapathiRaju -->
+
+    <owl:NamedIndividual rdf:about="http://www.LibrarySystem.com/ontologies/LMS.owl#Prof.VenkatapathiRaju">
+        <rdf:type rdf:resource="http://www.LibrarySystem.com/ontologies/LMS.owl#GuestUser"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.LibrarySystem.com/ontologies/LMS.owl#RRajesh -->
+
+    <owl:NamedIndividual rdf:about="http://www.LibrarySystem.com/ontologies/LMS.owl#RRajesh">
+        <rdf:type rdf:resource="http://www.LibrarySystem.com/ontologies/LMS.owl#AdminStaff"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.LibrarySystem.com/ontologies/LMS.owl#Rajini -->
+
+    <owl:NamedIndividual rdf:about="http://www.LibrarySystem.com/ontologies/LMS.owl#Rajini">
+        <rdf:type rdf:resource="http://www.LibrarySystem.com/ontologies/LMS.owl#UGStudent"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.LibrarySystem.com/ontologies/LMS.owl#Raju -->
+
+    <owl:NamedIndividual rdf:about="http://www.LibrarySystem.com/ontologies/LMS.owl#Raju">
+        <rdf:type rdf:resource="http://www.LibrarySystem.com/ontologies/LMS.owl#Technician"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.LibrarySystem.com/ontologies/LMS.owl#Ranjith -->
+
+    <owl:NamedIndividual rdf:about="http://www.LibrarySystem.com/ontologies/LMS.owl#Ranjith">
+        <rdf:type rdf:resource="http://www.LibrarySystem.com/ontologies/LMS.owl#JrAssistant"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.LibrarySystem.com/ontologies/LMS.owl#RanjithReddy -->
+
+    <owl:NamedIndividual rdf:about="http://www.LibrarySystem.com/ontologies/LMS.owl#RanjithReddy">
+        <rdf:type rdf:resource="http://www.LibrarySystem.com/ontologies/LMS.owl#ResearchScholar"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.LibrarySystem.com/ontologies/LMS.owl#RuleBasedSemiAutomaticOntologyLearning -->
+
+    <owl:NamedIndividual rdf:about="http://www.LibrarySystem.com/ontologies/LMS.owl#RuleBasedSemiAutomaticOntologyLearning">
+        <rdf:type rdf:resource="http://www.LibrarySystem.com/ontologies/LMS.owl#Thesis"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.LibrarySystem.com/ontologies/LMS.owl#Rushi -->
+
+    <owl:NamedIndividual rdf:about="http://www.LibrarySystem.com/ontologies/LMS.owl#Rushi">
+        <rdf:type rdf:resource="http://www.LibrarySystem.com/ontologies/LMS.owl#Technician"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.LibrarySystem.com/ontologies/LMS.owl#Samuel -->
+
+    <owl:NamedIndividual rdf:about="http://www.LibrarySystem.com/ontologies/LMS.owl#Samuel">
+        <rdf:type rdf:resource="http://www.LibrarySystem.com/ontologies/LMS.owl#UGStudent"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.LibrarySystem.com/ontologies/LMS.owl#Sathyanarayana -->
+
+    <owl:NamedIndividual rdf:about="http://www.LibrarySystem.com/ontologies/LMS.owl#Sathyanarayana">
+        <rdf:type rdf:resource="http://www.LibrarySystem.com/ontologies/LMS.owl#JrAssistant"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.LibrarySystem.com/ontologies/LMS.owl#Semantic_Query_Reasoning_in_Distributed_Environment -->
+
+    <owl:NamedIndividual rdf:about="http://www.LibrarySystem.com/ontologies/LMS.owl#Semantic_Query_Reasoning_in_Distributed_Environment">
+        <rdf:type rdf:resource="http://www.LibrarySystem.com/ontologies/LMS.owl#Thesis"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.LibrarySystem.com/ontologies/LMS.owl#Stephen -->
+
+    <owl:NamedIndividual rdf:about="http://www.LibrarySystem.com/ontologies/LMS.owl#Stephen">
+        <rdf:type rdf:resource="http://www.LibrarySystem.com/ontologies/LMS.owl#PGStudent"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.LibrarySystem.com/ontologies/LMS.owl#TanveerJahan -->
+
+    <owl:NamedIndividual rdf:about="http://www.LibrarySystem.com/ontologies/LMS.owl#TanveerJahan">
+        <rdf:type rdf:resource="http://www.LibrarySystem.com/ontologies/LMS.owl#ResearchScholar"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.LibrarySystem.com/ontologies/LMS.owl#TheHindu -->
+
+    <owl:NamedIndividual rdf:about="http://www.LibrarySystem.com/ontologies/LMS.owl#TheHindu">
+        <rdf:type rdf:resource="http://www.LibrarySystem.com/ontologies/LMS.owl#NewsPaper"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.LibrarySystem.com/ontologies/LMS.owl#TimesOfIndia -->
+
+    <owl:NamedIndividual rdf:about="http://www.LibrarySystem.com/ontologies/LMS.owl#TimesOfIndia">
+        <rdf:type rdf:resource="http://www.LibrarySystem.com/ontologies/LMS.owl#NewsPaper"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.LibrarySystem.com/ontologies/LMS.owl#TrainYourBrain -->
+
+    <owl:NamedIndividual rdf:about="http://www.LibrarySystem.com/ontologies/LMS.owl#TrainYourBrain">
+        <rdf:type rdf:resource="http://www.LibrarySystem.com/ontologies/LMS.owl#GeneralBook"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.LibrarySystem.com/ontologies/LMS.owl#Vaartha -->
+
+    <owl:NamedIndividual rdf:about="http://www.LibrarySystem.com/ontologies/LMS.owl#Vaartha">
+        <rdf:type rdf:resource="http://www.LibrarySystem.com/ontologies/LMS.owl#NewsPaper"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.LibrarySystem.com/ontologies/LMS.owl#VisualBasics -->
+
+    <owl:NamedIndividual rdf:about="http://www.LibrarySystem.com/ontologies/LMS.owl#VisualBasics">
+        <rdf:type rdf:resource="http://www.LibrarySystem.com/ontologies/LMS.owl#UGTextBook"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.LibrarySystem.com/ontologies/LMS.owl#William -->
+
+    <owl:NamedIndividual rdf:about="http://www.LibrarySystem.com/ontologies/LMS.owl#William">
+        <rdf:type rdf:resource="http://www.LibrarySystem.com/ontologies/LMS.owl#PGStudent"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.LibrarySystem.com/ontologies/LMS.owl#YBhavani -->
+
+    <owl:NamedIndividual rdf:about="http://www.LibrarySystem.com/ontologies/LMS.owl#YBhavani">
+        <rdf:type rdf:resource="http://www.LibrarySystem.com/ontologies/LMS.owl#Faculty"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="&owl;AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.LibrarySystem.com/ontologies/LMS.owl#AsstLibrarian"/>
+            <rdf:Description rdf:about="http://www.LibrarySystem.com/ontologies/LMS.owl#JrAssistant"/>
+            <rdf:Description rdf:about="http://www.LibrarySystem.com/ontologies/LMS.owl#Librarian"/>
+            <rdf:Description rdf:about="http://www.LibrarySystem.com/ontologies/LMS.owl#Technician"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="&owl;AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.LibrarySystem.com/ontologies/LMS.owl#Book"/>
+            <rdf:Description rdf:about="http://www.LibrarySystem.com/ontologies/LMS.owl#CD"/>
+            <rdf:Description rdf:about="http://www.LibrarySystem.com/ontologies/LMS.owl#Journal"/>
+            <rdf:Description rdf:about="http://www.LibrarySystem.com/ontologies/LMS.owl#NewsPaper"/>
+            <rdf:Description rdf:about="http://www.LibrarySystem.com/ontologies/LMS.owl#OnlineJournal"/>
+            <rdf:Description rdf:about="http://www.LibrarySystem.com/ontologies/LMS.owl#Thesis"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="&owl;AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.LibrarySystem.com/ontologies/LMS.owl#LibraryMember"/>
+            <rdf:Description rdf:about="http://www.LibrarySystem.com/ontologies/LMS.owl#LibraryPersonnel"/>
+            <rdf:Description rdf:about="http://www.LibrarySystem.com/ontologies/LMS.owl#LibraryResource"/>
+            <rdf:Description rdf:about="http://www.LibrarySystem.com/ontologies/LMS.owl#LibraryService"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="&owl;AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.LibrarySystem.com/ontologies/LMS.owl#GeneralBook"/>
+            <rdf:Description rdf:about="http://www.LibrarySystem.com/ontologies/LMS.owl#ReferenceBook"/>
+            <rdf:Description rdf:about="http://www.LibrarySystem.com/ontologies/LMS.owl#TextBook"/>
+        </owl:members>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 3.2.3.1824) http://owlapi.sourceforge.net -->
+

@@ -1,0 +1,803 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+    <!ENTITY univ-bench "http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#" >
+    <!ENTITY university "http://www.mindswap.org/ontologies/debugging/university.owl#" >
+    <!ENTITY Ontology1336557684515 "http://www.semanticweb.org/ontologies/2012/4/Ontology1336557684515.owl#" >
+    <!ENTITY ka "file:/C:/Users/User/Desktop/final&#37;20ontologies&#37;20for&#37;20thesis/original&#37;20ontologies/ka.owl#" >
+    <!ENTITY www04photo "file:/C:/Users/User/Desktop/final&#37;20ontologies&#37;20for&#37;20thesis/original&#37;20ontologies/www04photo.owl#" >
+]>
+
+
+<rdf:RDF xmlns="http://www.semanticweb.org/ontologies/2015/10/Ontology1448702195267.owl#"
+     xml:base="http://www.semanticweb.org/ontologies/2015/10/Ontology1448702195267.owl"
+     xmlns:Ontology1336557684515="http://www.semanticweb.org/ontologies/2012/4/Ontology1336557684515.owl#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:university="http://www.mindswap.org/ontologies/debugging/university.owl#"
+     xmlns:www04photo="file:/C:/Users/User/Desktop/final%20ontologies%20for%20thesis/original%20ontologies/www04photo.owl#"
+     xmlns:univ-bench="http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:ka="file:/C:/Users/User/Desktop/final%20ontologies%20for%20thesis/original%20ontologies/ka.owl#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/ontologies/2015/10/Ontology1448702195267.owl">
+        <rdfs:label>Univ-bench Ontology</rdfs:label>
+        <rdfs:comment>An university ontology for benchmark tests</rdfs:comment>
+        <owl:versionInfo>univ-bench-ontology-owl, ver April 1, 2004</owl:versionInfo>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Datatypes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.w3.org/2001/XMLSchema#boolean -->
+
+    <rdfs:Datatype rdf:about="&xsd;boolean"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- file:/C:/Users/User/Desktop/final%20ontologies%20for%20thesis/original%20ontologies/ka.owl#abstract -->
+
+    <owl:DatatypeProperty rdf:about="&ka;abstract"/>
+    
+
+
+    <!-- file:/C:/Users/User/Desktop/final%20ontologies%20for%20thesis/original%20ontologies/ka.owl#address -->
+
+    <owl:DatatypeProperty rdf:about="&ka;address"/>
+    
+
+
+    <!-- file:/C:/Users/User/Desktop/final%20ontologies%20for%20thesis/original%20ontologies/ka.owl#applicationAreas -->
+
+    <owl:DatatypeProperty rdf:about="&ka;applicationAreas"/>
+    
+
+
+    <!-- file:/C:/Users/User/Desktop/final%20ontologies%20for%20thesis/original%20ontologies/ka.owl#approaches -->
+
+    <owl:DatatypeProperty rdf:about="&ka;approaches"/>
+    
+
+
+    <!-- file:/C:/Users/User/Desktop/final%20ontologies%20for%20thesis/original%20ontologies/ka.owl#date -->
+
+    <owl:DatatypeProperty rdf:about="&ka;date"/>
+    
+
+
+    <!-- file:/C:/Users/User/Desktop/final%20ontologies%20for%20thesis/original%20ontologies/ka.owl#dateOfLastModification -->
+
+    <owl:DatatypeProperty rdf:about="&ka;dateOfLastModification"/>
+    
+
+
+    <!-- file:/C:/Users/User/Desktop/final%20ontologies%20for%20thesis/original%20ontologies/ka.owl#description -->
+
+    <owl:DatatypeProperty rdf:about="&ka;description"/>
+    
+
+
+    <!-- file:/C:/Users/User/Desktop/final%20ontologies%20for%20thesis/original%20ontologies/ka.owl#email -->
+
+    <owl:DatatypeProperty rdf:about="&ka;email"/>
+    
+
+
+    <!-- file:/C:/Users/User/Desktop/final%20ontologies%20for%20thesis/original%20ontologies/ka.owl#eventTitle -->
+
+    <owl:DatatypeProperty rdf:about="&ka;eventTitle"/>
+    
+
+
+    <!-- file:/C:/Users/User/Desktop/final%20ontologies%20for%20thesis/original%20ontologies/ka.owl#fax -->
+
+    <owl:DatatypeProperty rdf:about="&ka;fax"/>
+    
+
+
+    <!-- file:/C:/Users/User/Desktop/final%20ontologies%20for%20thesis/original%20ontologies/ka.owl#firstName -->
+
+    <owl:DatatypeProperty rdf:about="&ka;firstName"/>
+    
+
+
+    <!-- file:/C:/Users/User/Desktop/final%20ontologies%20for%20thesis/original%20ontologies/ka.owl#firstPage -->
+
+    <owl:DatatypeProperty rdf:about="&ka;firstPage"/>
+    
+
+
+    <!-- file:/C:/Users/User/Desktop/final%20ontologies%20for%20thesis/original%20ontologies/ka.owl#keyword -->
+
+    <owl:DatatypeProperty rdf:about="&ka;keyword"/>
+    
+
+
+    <!-- file:/C:/Users/User/Desktop/final%20ontologies%20for%20thesis/original%20ontologies/ka.owl#lastName -->
+
+    <owl:DatatypeProperty rdf:about="&ka;lastName"/>
+    
+
+
+    <!-- file:/C:/Users/User/Desktop/final%20ontologies%20for%20thesis/original%20ontologies/ka.owl#lastPage -->
+
+    <owl:DatatypeProperty rdf:about="&ka;lastPage"/>
+    
+
+
+    <!-- file:/C:/Users/User/Desktop/final%20ontologies%20for%20thesis/original%20ontologies/ka.owl#location -->
+
+    <owl:DatatypeProperty rdf:about="&ka;location"/>
+    
+
+
+    <!-- file:/C:/Users/User/Desktop/final%20ontologies%20for%20thesis/original%20ontologies/ka.owl#mailingLists -->
+
+    <owl:DatatypeProperty rdf:about="&ka;mailingLists"/>
+    
+
+
+    <!-- file:/C:/Users/User/Desktop/final%20ontologies%20for%20thesis/original%20ontologies/ka.owl#middleInitial -->
+
+    <owl:DatatypeProperty rdf:about="&ka;middleInitial"/>
+    
+
+
+    <!-- file:/C:/Users/User/Desktop/final%20ontologies%20for%20thesis/original%20ontologies/ka.owl#name -->
+
+    <owl:DatatypeProperty rdf:about="&ka;name"/>
+    
+
+
+    <!-- file:/C:/Users/User/Desktop/final%20ontologies%20for%20thesis/original%20ontologies/ka.owl#number -->
+
+    <owl:DatatypeProperty rdf:about="&ka;number"/>
+    
+
+
+    <!-- file:/C:/Users/User/Desktop/final%20ontologies%20for%20thesis/original%20ontologies/ka.owl#phone -->
+
+    <owl:DatatypeProperty rdf:about="&ka;phone"/>
+    
+
+
+    <!-- file:/C:/Users/User/Desktop/final%20ontologies%20for%20thesis/original%20ontologies/ka.owl#photo -->
+
+    <owl:DatatypeProperty rdf:about="&ka;photo"/>
+    
+
+
+    <!-- file:/C:/Users/User/Desktop/final%20ontologies%20for%20thesis/original%20ontologies/ka.owl#proceedingsTitle -->
+
+    <owl:DatatypeProperty rdf:about="&ka;proceedingsTitle"/>
+    
+
+
+    <!-- file:/C:/Users/User/Desktop/final%20ontologies%20for%20thesis/original%20ontologies/ka.owl#productFAQ -->
+
+    <owl:DatatypeProperty rdf:about="&ka;productFAQ"/>
+    
+
+
+    <!-- file:/C:/Users/User/Desktop/final%20ontologies%20for%20thesis/original%20ontologies/ka.owl#productMailingList -->
+
+    <owl:DatatypeProperty rdf:about="&ka;productMailingList"/>
+    
+
+
+    <!-- file:/C:/Users/User/Desktop/final%20ontologies%20for%20thesis/original%20ontologies/ka.owl#productName -->
+
+    <owl:DatatypeProperty rdf:about="&ka;productName"/>
+    
+
+
+    <!-- file:/C:/Users/User/Desktop/final%20ontologies%20for%20thesis/original%20ontologies/ka.owl#series -->
+
+    <owl:DatatypeProperty rdf:about="&ka;series"/>
+    
+
+
+    <!-- file:/C:/Users/User/Desktop/final%20ontologies%20for%20thesis/original%20ontologies/ka.owl#title -->
+
+    <owl:DatatypeProperty rdf:about="&ka;title"/>
+    
+
+
+    <!-- file:/C:/Users/User/Desktop/final%20ontologies%20for%20thesis/original%20ontologies/ka.owl#type -->
+
+    <owl:DatatypeProperty rdf:about="&ka;type"/>
+    
+
+
+    <!-- file:/C:/Users/User/Desktop/final%20ontologies%20for%20thesis/original%20ontologies/ka.owl#volume -->
+
+    <owl:DatatypeProperty rdf:about="&ka;volume"/>
+    
+
+
+    <!-- file:/C:/Users/User/Desktop/final%20ontologies%20for%20thesis/original%20ontologies/ka.owl#webpages -->
+
+    <owl:DatatypeProperty rdf:about="&ka;webpages"/>
+    
+
+
+    <!-- file:/C:/Users/User/Desktop/final%20ontologies%20for%20thesis/original%20ontologies/ka.owl#year -->
+
+    <owl:DatatypeProperty rdf:about="&ka;year"/>
+    
+
+
+    <!-- file:/C:/Users/User/Desktop/final%20ontologies%20for%20thesis/original%20ontologies/www04photo.owl#hasEndDate -->
+
+    <owl:DatatypeProperty rdf:about="&www04photo;hasEndDate">
+        <rdfs:domain rdf:resource="&www04photo;Event"/>
+        <rdfs:range rdf:resource="&xsd;dateTime"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- file:/C:/Users/User/Desktop/final%20ontologies%20for%20thesis/original%20ontologies/www04photo.owl#hasEndTime -->
+
+    <owl:DatatypeProperty rdf:about="&www04photo;hasEndTime">
+        <rdfs:domain rdf:resource="&www04photo;Event"/>
+        <rdfs:range rdf:resource="&xsd;dateTime"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- file:/C:/Users/User/Desktop/final%20ontologies%20for%20thesis/original%20ontologies/www04photo.owl#hasStartDate -->
+
+    <owl:DatatypeProperty rdf:about="&www04photo;hasStartDate">
+        <rdfs:domain rdf:resource="&www04photo;Event"/>
+        <rdfs:range rdf:resource="&xsd;dateTime"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- file:/C:/Users/User/Desktop/final%20ontologies%20for%20thesis/original%20ontologies/www04photo.owl#hasStartTime -->
+
+    <owl:DatatypeProperty rdf:about="&www04photo;hasStartTime">
+        <rdfs:domain rdf:resource="&www04photo;Event"/>
+        <rdfs:range rdf:resource="&xsd;dateTime"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#age -->
+
+    <owl:DatatypeProperty rdf:about="&univ-bench;age">
+        <rdfs:label>is age</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#emailAddress -->
+
+    <owl:DatatypeProperty rdf:about="&univ-bench;emailAddress">
+        <rdfs:label>can be reached at</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#name -->
+
+    <owl:DatatypeProperty rdf:about="&univ-bench;name">
+        <rdfs:label>name</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#officeNumber -->
+
+    <owl:DatatypeProperty rdf:about="&univ-bench;officeNumber">
+        <rdfs:label>office room No.</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#researchInterest -->
+
+    <owl:DatatypeProperty rdf:about="&univ-bench;researchInterest">
+        <rdfs:label>is researching</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#telephone -->
+
+    <owl:DatatypeProperty rdf:about="&univ-bench;telephone">
+        <rdfs:label>telephone number</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#title -->
+
+    <owl:DatatypeProperty rdf:about="&univ-bench;title">
+        <rdfs:label>title</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.mindswap.org/ontologies/debugging/university.owl#hasTenure -->
+
+    <owl:DatatypeProperty rdf:about="&university;hasTenure">
+        <rdfs:range rdf:resource="&xsd;boolean"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2012/4/Ontology1336557684515.owl#Title -->
+
+    <owl:DatatypeProperty rdf:about="&Ontology1336557684515;Title"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2012/4/Ontology1336557684515.owl#year -->
+
+    <owl:DatatypeProperty rdf:about="&Ontology1336557684515;year"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- file:/C:/Users/User/Desktop/final%20ontologies%20for%20thesis/original%20ontologies/ka.owl#College -->
+
+    <owl:Class rdf:about="&ka;College"/>
+    
+
+
+    <!-- file:/C:/Users/User/Desktop/final%20ontologies%20for%20thesis/original%20ontologies/ka.owl#Department -->
+
+    <owl:Class rdf:about="&ka;Department">
+        <rdfs:subClassOf rdf:resource="&ka;College"/>
+    </owl:Class>
+    
+
+
+    <!-- file:/C:/Users/User/Desktop/final%20ontologies%20for%20thesis/original%20ontologies/ka.owl#DevelopmentProject -->
+
+    <owl:Class rdf:about="&ka;DevelopmentProject">
+        <rdfs:subClassOf rdf:resource="&ka;Project"/>
+    </owl:Class>
+    
+
+
+    <!-- file:/C:/Users/User/Desktop/final%20ontologies%20for%20thesis/original%20ontologies/ka.owl#Project -->
+
+    <owl:Class rdf:about="&ka;Project">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&ka;title"/>
+                <owl:allValuesFrom rdf:resource="&xsd;string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- file:/C:/Users/User/Desktop/final%20ontologies%20for%20thesis/original%20ontologies/ka.owl#ResearchGroup -->
+
+    <owl:Class rdf:about="&ka;ResearchGroup">
+        <rdfs:subClassOf rdf:resource="&ka;College"/>
+    </owl:Class>
+    
+
+
+    <!-- file:/C:/Users/User/Desktop/final%20ontologies%20for%20thesis/original%20ontologies/ka.owl#ResearchProject -->
+
+    <owl:Class rdf:about="&ka;ResearchProject">
+        <rdfs:subClassOf rdf:resource="&ka;Project"/>
+    </owl:Class>
+    
+
+
+    <!-- file:/C:/Users/User/Desktop/final%20ontologies%20for%20thesis/original%20ontologies/ka.owl#SoftwareProject -->
+
+    <owl:Class rdf:about="&ka;SoftwareProject">
+        <rdfs:subClassOf rdf:resource="&ka;DevelopmentProject"/>
+    </owl:Class>
+    
+
+
+    <!-- file:/C:/Users/User/Desktop/final%20ontologies%20for%20thesis/original%20ontologies/www04photo.owl#Conference -->
+
+    <owl:Class rdf:about="&www04photo;Conference">
+        <rdfs:subClassOf rdf:resource="&www04photo;Event"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&www04photo;hasStartDate"/>
+                <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&www04photo;hasEndDate"/>
+                <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- file:/C:/Users/User/Desktop/final%20ontologies%20for%20thesis/original%20ontologies/www04photo.owl#Event -->
+
+    <owl:Class rdf:about="&www04photo;Event"/>
+    
+
+
+    <!-- file:/C:/Users/User/Desktop/final%20ontologies%20for%20thesis/original%20ontologies/www04photo.owl#Meeting -->
+
+    <owl:Class rdf:about="&www04photo;Meeting">
+        <rdfs:subClassOf rdf:resource="&www04photo;Event"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&www04photo;hasEndDate"/>
+                <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&www04photo;hasStartDate"/>
+                <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- file:/C:/Users/User/Desktop/final%20ontologies%20for%20thesis/original%20ontologies/www04photo.owl#Presentation -->
+
+    <owl:Class rdf:about="&www04photo;Presentation">
+        <rdfs:subClassOf rdf:resource="&www04photo;Event"/>
+    </owl:Class>
+    
+
+
+    <!-- file:/C:/Users/User/Desktop/final%20ontologies%20for%20thesis/original%20ontologies/www04photo.owl#Workshop -->
+
+    <owl:Class rdf:about="&www04photo;Workshop">
+        <rdfs:subClassOf rdf:resource="&www04photo;Event"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&www04photo;hasEndDate"/>
+                <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&www04photo;hasStartDate"/>
+                <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#AdministrativeStaff -->
+
+    <owl:Class rdf:about="&univ-bench;AdministrativeStaff">
+        <rdfs:subClassOf rdf:resource="&univ-bench;Employee"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#AssistantProfessor -->
+
+    <owl:Class rdf:about="&univ-bench;AssistantProfessor">
+        <rdfs:subClassOf rdf:resource="&univ-bench;Professor"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#AssociateProfessor -->
+
+    <owl:Class rdf:about="&univ-bench;AssociateProfessor">
+        <rdfs:subClassOf rdf:resource="&univ-bench;Professor"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#ClericalStaff -->
+
+    <owl:Class rdf:about="&univ-bench;ClericalStaff">
+        <rdfs:subClassOf rdf:resource="&univ-bench;AdministrativeStaff"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#Employee -->
+
+    <owl:Class rdf:about="&univ-bench;Employee">
+        <rdfs:subClassOf rdf:resource="&univ-bench;Person"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#Faculty -->
+
+    <owl:Class rdf:about="&univ-bench;Faculty">
+        <rdfs:subClassOf rdf:resource="&univ-bench;Employee"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#FullProfessor -->
+
+    <owl:Class rdf:about="&univ-bench;FullProfessor">
+        <rdfs:subClassOf rdf:resource="&univ-bench;Professor"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#Lecturer -->
+
+    <owl:Class rdf:about="&univ-bench;Lecturer">
+        <rdfs:subClassOf rdf:resource="&univ-bench;Faculty"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#PGStudent -->
+
+    <owl:Class rdf:about="&univ-bench;PGStudent">
+        <rdfs:subClassOf rdf:resource="&univ-bench;Student"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#Person -->
+
+    <owl:Class rdf:about="&univ-bench;Person"/>
+    
+
+
+    <!-- http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#PostDoc -->
+
+    <owl:Class rdf:about="&univ-bench;PostDoc">
+        <rdfs:subClassOf rdf:resource="&univ-bench;Faculty"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#Professor -->
+
+    <owl:Class rdf:about="&univ-bench;Professor">
+        <rdfs:subClassOf rdf:resource="&univ-bench;Faculty"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#ResearchAssistant -->
+
+    <owl:Class rdf:about="&univ-bench;ResearchAssistant">
+        <rdfs:subClassOf rdf:resource="&univ-bench;Student"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#Student -->
+
+    <owl:Class rdf:about="&univ-bench;Student">
+        <rdfs:subClassOf rdf:resource="&univ-bench;Person"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#SystemStaff -->
+
+    <owl:Class rdf:about="&univ-bench;SystemStaff">
+        <rdfs:subClassOf rdf:resource="&univ-bench;AdministrativeStaff"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#UGStudent -->
+
+    <owl:Class rdf:about="&univ-bench;UGStudent">
+        <rdfs:subClassOf rdf:resource="&univ-bench;Student"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#VisitingProfessor -->
+
+    <owl:Class rdf:about="&univ-bench;VisitingProfessor">
+        <rdfs:subClassOf rdf:resource="&univ-bench;Professor"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.mindswap.org/ontologies/debugging/university.owl#Course -->
+
+    <owl:Class rdf:about="&university;Course"/>
+    
+
+
+    <!-- http://www.mindswap.org/ontologies/debugging/university.owl#Library -->
+
+    <owl:Class rdf:about="&university;Library"/>
+    
+
+
+    <!-- http://www.mindswap.org/ontologies/debugging/university.owl#PGCourse -->
+
+    <owl:Class rdf:about="&university;PGCourse">
+        <rdfs:subClassOf rdf:resource="&university;Course"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.mindswap.org/ontologies/debugging/university.owl#PGLibrary -->
+
+    <owl:Class rdf:about="&university;PGLibrary">
+        <rdfs:subClassOf rdf:resource="&university;Library"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.mindswap.org/ontologies/debugging/university.owl#PhD -->
+
+    <owl:Class rdf:about="&university;PhD">
+        <rdfs:subClassOf rdf:resource="&university;Course"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.mindswap.org/ontologies/debugging/university.owl#UGCourse -->
+
+    <owl:Class rdf:about="&university;UGCourse">
+        <rdfs:subClassOf rdf:resource="&university;Course"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.mindswap.org/ontologies/debugging/university.owl#UGLibrary -->
+
+    <owl:Class rdf:about="&university;UGLibrary">
+        <rdfs:subClassOf rdf:resource="&university;Library"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2012/4/Ontology1336557684515.owl#Article -->
+
+    <owl:Class rdf:about="&Ontology1336557684515;Article">
+        <rdfs:subClassOf rdf:resource="&Ontology1336557684515;Publication"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2012/4/Ontology1336557684515.owl#Book -->
+
+    <owl:Class rdf:about="&Ontology1336557684515;Book">
+        <rdfs:subClassOf rdf:resource="&Ontology1336557684515;Publication"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2012/4/Ontology1336557684515.owl#Journal -->
+
+    <owl:Class rdf:about="&Ontology1336557684515;Journal">
+        <rdfs:subClassOf rdf:resource="&Ontology1336557684515;Publication"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2012/4/Ontology1336557684515.owl#Publication -->
+
+    <owl:Class rdf:about="&Ontology1336557684515;Publication">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&Ontology1336557684515;year"/>
+                <owl:allValuesFrom rdf:resource="&xsd;integer"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&Ontology1336557684515;Title"/>
+                <owl:allValuesFrom rdf:resource="&xsd;string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#Thing -->
+
+    <owl:Class rdf:about="&owl;Thing"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.mindswap.org/ontologies/debugging/university.owl#AI -->
+
+    <owl:Thing rdf:about="&university;AI">
+        <rdf:type rdf:resource="&owl;NamedIndividual"/>
+    </owl:Thing>
+    
+
+
+    <!-- http://www.mindswap.org/ontologies/debugging/university.owl#Graphics -->
+
+    <owl:Thing rdf:about="&university;Graphics">
+        <rdf:type rdf:resource="&owl;NamedIndividual"/>
+    </owl:Thing>
+    
+
+
+    <!-- http://www.mindswap.org/ontologies/debugging/university.owl#HCI -->
+
+    <owl:Thing rdf:about="&university;HCI">
+        <rdf:type rdf:resource="&owl;NamedIndividual"/>
+    </owl:Thing>
+    
+
+
+    <!-- http://www.mindswap.org/ontologies/debugging/university.owl#Network -->
+
+    <owl:Thing rdf:about="&university;Network">
+        <rdf:type rdf:resource="&owl;NamedIndividual"/>
+    </owl:Thing>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 3.2.3.1824) http://owlapi.sourceforge.net -->
+
